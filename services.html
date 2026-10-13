@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Services | Team Venture Metal Coating LLC | Abu Dhabi, UAE</title>
+  <meta name="description"
+    content="Comprehensive engineering capabilities: Pipe spool fabrication, oil & gas field maintenance, structural steel skids, material sourcing, and specialized industrial coatings in Abu Dhabi & Sharjah.">
+  <link rel="icon" type="image/png" href="assets/images/company-logo-raw.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       Site Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="Team Venture Metal Coating LLC Homepage">
+        <div class="brand-emblem">
+          <img src="assets/images/company-logo-raw.png" alt="Team Venture Metal Coating LLC" width="48" height="48">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">TEAM VENTURE <span>METAL COATING</span></span>
+          <span class="brand-subtitle">
+            LLC – S.P.C. <span class="uae-badge">Abu Dhabi, UAE</span>
+          </span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="rfq.html" class="nav-link">RFQ Desk</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta-group">
+        <a href="rfq.html" class="btn btn-primary btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+          </svg>
+          Request RFQ
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Page Banner
+       ========================================================================== -->
+  <section class="hero-section" style="min-height: 48vh; padding-top: calc(var(--header-height) + 3rem); padding-bottom: 3.5rem;">
+    <div class="hero-bg">
+      <img src="assets/images/pipe-fabrication.jpg" alt="Pipeline Spool Fabrication Facility Abu Dhabi">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>Capabilities &bull; Musaffah Fabrication Yard</span>
+      </div>
+      <h1 class="hero-title" style="font-size: clamp(2rem, 3.8vw, 3.2rem); margin-bottom: 1rem;">
+        Specialized Engineering Services
+      </h1>
+      <p class="hero-description" style="margin-bottom: 0;">
+        From high-pressure duplex spool fabrication to heavy offshore structural skids and protective anti-corrosion linings, TVMC delivers complete turnkey solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Services Showcase (Interactive Tabs & Technical Details)
+       ========================================================================== -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+          <span>Comprehensive Disciplines</span>
+        </div>
+        <h2 class="section-title">Core Fabrication &amp; Engineering Divisions</h2>
+        <p class="section-desc">Select an engineering discipline below to view technical specifications, QA/QC standards, metallurgy capacities, and fabrication parameters.</p>
+      </div>
+
+      <!-- Services Navigation Tabs -->
+      <div class="services-tabs-nav">
+        <button class="service-tab-btn active" data-target="pane-pipes">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" /></svg>
+          <span>1. Pipe Spool Fabrication</span>
+        </button>
+        <button class="service-tab-btn" data-target="pane-oilgas">
+          <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2v1.1C17.6 5.7 20 8.6 20 12v6h2v2H2v-2h2v-6c0-3.4 2.4-6.3 6-6.9V4c0-1.1.9-2 2-2z" /></svg>
+          <span>2. Oil &amp; Gas Field Services</span>
+        </button>
+        <button class="service-tab-btn" data-target="pane-structural">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 19H5v-4h4v4zm0-6H5V9h4v4zm0-6H5V5h4v2zm6 12h-4v-4h4v4zm0-6h-4V9h4v4zm0-6h-4V5h4v2zm4 12h-4v-4h4v4zm0-6h-4V9h4v4zm0-6h-4V5h4v2z" /></svg>
+          <span>3. Structural Steel Fabrication</span>
+        </button>
+        <button class="service-tab-btn" data-target="pane-procurement">
+          <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" /></svg>
+          <span>4. Global Material Sourcing</span>
+        </button>
+        <button class="service-tab-btn" data-target="pane-shutdown">
+          <svg viewBox="0 0 24 24"><path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" /></svg>
+          <span>5. Plant Shutdown &amp; Emergency</span>
+        </button>
+        <button class="service-tab-btn" data-target="pane-coating">
+          <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19H12v2H2.5l-.7-1.5 2.18-2.61C2.74 15.17 2 13.17 2 11c0-5.52 4.48-10 10-10s10 4.48 10 10h-2c0-4.97-4.03-9-9-9z" /></svg>
+          <span>6. Surface Blasting &amp; Coating</span>
+        </button>
+      </div>
+
+      <!-- Service Panes -->
+      <!-- Pane 1: Pipe Spool Fabrication -->
+      <div class="service-pane active" id="pane-pipes">
+        <div class="service-card-layout">
+          <div class="service-info">
+            <span class="service-num">Service Discipline 01</span>
+            <h3 class="service-heading">Pipe &amp; Pipeline Spool Fabrication</h3>
+            <p class="service-desc">
+              Comprehensive pipe spool fabrication adhering strictly to ASME B31.3 and ADNOC oil &amp; gas specifications. Fabricating carbon steel, stainless steel, duplex 2205, super duplex 2507, and exotic alloys with 100% radiographic and hydro testing.
+            </p>
+            <div class="service-feature-list">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Fabrication up to 64&quot; diameter pipe spools with wall thicknesses exceeding Schedule 160.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Qualified GTAW, SMAW, GMAW, and SAW procedures compliant with ASME Sec IX.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Full traceability documentation including Mill Test Certificates (MTC) and weld logs.</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+              <a href="rfq.html" class="btn btn-primary">
+                <span>Request Pipe Spool RFQ</span>
+              </a>
+              <a href="portfolio.html" class="btn btn-secondary">
+                <span>View Spool Projects</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-gallery-preview">
+            <div class="service-main-image">
+              <img src="assets/images/pipe-fabrication.jpg" alt="Pipe Spool Fabrication Yard Abu Dhabi">
+            </div>
+            <div class="service-badges-row">
+              <span class="spec-badge">ASME B31.3</span>
+              <span class="spec-badge">ADNOC Approved</span>
+              <span class="spec-badge">Duplex 2205</span>
+              <span class="spec-badge">100% NDT Hydro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pane 2: Oil & Gas Field Services -->
+      <div class="service-pane" id="pane-oilgas">
+        <div class="service-card-layout">
+          <div class="service-info">
+            <span class="service-num">Service Discipline 02</span>
+            <h3 class="service-heading">Oil &amp; Gas Field Services</h3>
+            <p class="service-desc">
+              Onsite welding, plant maintenance, piping tie-ins, and rapid turnaround services for onshore facilities and offshore energy platforms across the UAE.
+            </p>
+            <div class="service-feature-list">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Fully certified field welding crews mobilized with independent mobile welding rigs.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Hot-work safety compliance meeting the strictest ADNOC &amp; OPITO HSE protocols.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Valve replacements, manifold modifications, and flange bolt tensioning.</span>
+              </div>
+            </div>
+            <div>
+              <a href="rfq.html" class="btn btn-primary"><span>Request Field Services Quote</span></a>
+            </div>
+          </div>
+          <div class="service-gallery-preview">
+            <div class="service-main-image">
+              <img src="assets/images/service-oilgas.jpg" alt="Oil & Gas Field Piping Maintenance UAE">
+            </div>
+            <div class="service-badges-row">
+              <span class="spec-badge">Onshore / Offshore</span>
+              <span class="spec-badge">Hot Tie-Ins</span>
+              <span class="spec-badge">ADNOC Safety Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pane 3: Structural Steel Fabrication -->
+      <div class="service-pane" id="pane-structural">
+        <div class="service-card-layout">
+          <div class="service-info">
+            <span class="service-num">Service Discipline 03</span>
+            <h3 class="service-heading">Structural Steel Fabrication (Skids &amp; Frames)</h3>
+            <p class="service-desc">
+              Custom fabrication of heavy structural steel assemblies, modular equipment skids, offshore lift frames, pipe racks, and industrial access platforms built to AWS D1.1 specifications.
+            </p>
+            <div class="service-feature-list">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Fabrication of modular process skids up to 45 tons single-lift capacity.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Certified lift lug proof load testing and dimensional verification per ISO standards.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Hot-dip galvanizing and multi-coat offshore marine epoxy protective systems.</span>
+              </div>
+            </div>
+            <div>
+              <a href="rfq.html" class="btn btn-primary"><span>Request Structural Steel RFQ</span></a>
+            </div>
+          </div>
+          <div class="service-gallery-preview">
+            <div class="service-main-image">
+              <img src="assets/images/service-structural.jpg" alt="Structural Steel Skid Fabrication Abu Dhabi">
+            </div>
+            <div class="service-badges-row">
+              <span class="spec-badge">AWS D1.1 Structural</span>
+              <span class="spec-badge">Equipment Skids</span>
+              <span class="spec-badge">Offshore Lift Tested</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pane 4: Material Procurement -->
+      <div class="service-pane" id="pane-procurement">
+        <div class="service-card-layout">
+          <div class="service-info">
+            <span class="service-num">Service Discipline 04</span>
+            <h3 class="service-heading">Material Procurement &amp; Global Sourcing</h3>
+            <p class="service-desc">
+              Global supply chain management for seamless and welded pipes, forged fittings, flanges, and specialized metallurgy. Direct mill relationships ensure full MTC compliance and expedited delivery.
+            </p>
+            <div class="service-feature-list">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Stocking yards in Musaffah and Sajja for immediate fast-track dispatch.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>EN 10204 3.1 &amp; 3.2 certified materials with third-party inspection (TPI).</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Competitive project packages for EPC contractors across Abu Dhabi and Dubai.</span>
+              </div>
+            </div>
+            <div>
+              <a href="rfq.html" class="btn btn-primary"><span>Inquire Material Availability</span></a>
+            </div>
+          </div>
+          <div class="service-gallery-preview">
+            <div class="service-main-image">
+              <img src="assets/images/service-procurement.jpg" alt="Pipe Procurement and Stock Yard Musaffah">
+            </div>
+            <div class="service-badges-row">
+              <span class="spec-badge">Global Sourcing</span>
+              <span class="spec-badge">EN 10204 3.1/3.2</span>
+              <span class="spec-badge">Carbon, SS &amp; Duplex</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pane 5: Plant Shutdown -->
+      <div class="service-pane" id="pane-shutdown">
+        <div class="service-card-layout">
+          <div class="service-info">
+            <span class="service-num">Service Discipline 05</span>
+            <h3 class="service-heading">Plant Shutdown &amp; Emergency Maintenance</h3>
+            <p class="service-desc">
+              24/7 dedicated rapid turnaround support for planned refinery turnarounds, power plant outages, and unscheduled emergency pipeline replacements across the UAE.
+            </p>
+            <div class="service-feature-list">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>24/7 dual-shift manufacturing guaranteeing expedited delivery timelines.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Pre-turnaround spool spooling, hydrotesting, and painting before shutdown window.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Rapid logistics dispatch directly to Habshan, Ruwais, Sajja, and Jebel Ali sites.</span>
+              </div>
+            </div>
+            <div>
+              <a href="rfq.html" class="btn btn-primary"><span>Emergency 24/7 RFQ</span></a>
+            </div>
+          </div>
+          <div class="service-gallery-preview">
+            <div class="service-main-image">
+              <img src="assets/images/service-shutdown.jpg" alt="Refinery Shutdown Spool Replacement UAE">
+            </div>
+            <div class="service-badges-row">
+              <span class="spec-badge">24/7 Emergency</span>
+              <span class="spec-badge">Fast-Track Turnaround</span>
+              <span class="spec-badge">Pre-Tested Spools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pane 6: Surface Blasting & Coating -->
+      <div class="service-pane" id="pane-coating">
+        <div class="service-card-layout">
+          <div class="service-info">
+            <span class="service-num">Service Discipline 06</span>
+            <h3 class="service-heading">Surface Blasting &amp; High-Performance Coating</h3>
+            <p class="service-desc">
+              State-of-the-art automatic and manual blast booths achieving Sa 2.5 / Sa 3 profiles followed by certified application of Fusion Bonded Epoxy (FBE), 3-layer Polyethylene (3LPE), polyurethane, and marine epoxies.
+            </p>
+            <div class="service-feature-list">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Grit and garnet abrasive blasting adhering to SSPC-SP 10 / NACE No. 2 specs.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>In-house NACE Level 2 / 3 inspectors recording DFT, holiday detection, and adhesion.</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                <span>Internal flow-coat lining for crude, gas, and potable water pipelines.</span>
+              </div>
+            </div>
+            <div>
+              <a href="rfq.html" class="btn btn-primary"><span>Request Coating RFQ</span></a>
+            </div>
+          </div>
+          <div class="service-gallery-preview">
+            <div class="service-main-image">
+              <img src="assets/images/service-coating.jpg" alt="Industrial Metal Blasting and Protective Coating">
+            </div>
+            <div class="service-badges-row">
+              <span class="spec-badge">NACE Level 2/3 Inspected</span>
+              <span class="spec-badge">FBE / 3LPE</span>
+              <span class="spec-badge">Sa 2.5 Grit Blasting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand">
+            <div class="brand-emblem">
+              <img src="assets/images/company-logo-raw.png" alt="Team Venture Metal Coating LLC" width="48" height="48">
+            </div>
+            <div class="brand-info">
+              <span class="brand-name">TEAM VENTURE <span>METAL COATING</span></span>
+              <span class="brand-subtitle">LLC – S.P.C.</span>
+            </div>
+          </a>
+          <p>
+            Specialized engineering, pipeline spool fabrication, and metal coating services based in Musaffah, Abu Dhabi, UAE. Serving oil &amp; gas, marine, and industrial sectors with certified quality.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="rfq.html">RFQ Desk</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Services</h5>
+          <div class="footer-links">
+            <a href="services.html">Pipe Spool Fabrication</a>
+            <a href="services.html">Oil &amp; Gas Field Services</a>
+            <a href="services.html">Structural Steel Skids</a>
+            <a href="services.html">Material Procurement</a>
+            <a href="services.html">Industrial Blasting &amp; Coating</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Head Office</h5>
+          <div class="footer-links">
+            <span style="color: #cbd5e1; font-size: 0.88rem;">Mazyad Mall, Zayed City</span>
+            <span style="color: #cbd5e1; font-size: 0.88rem;">Musaffah Industrial, Abu Dhabi, UAE</span>
+            <span style="color: #cbd5e1; font-size: 0.88rem;">Phone: +971 55 409 8437</span>
+            <a href="mailto:info@tvmcservices.com" style="color: var(--accent-gold-light); font-weight: 600;">info@tvmcservices.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Team Venture Metal Coating LLC – S.P.C. All rights reserved.
+        </div>
+        <button class="back-to-top-btn" aria-label="Back to top">
+          <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" /></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions Widget -->
+  <div class="floating-actions">
+    <a href="https://wa.me/971554098437?text=Hello%20Team%20Venture%20Metal%20Coating%20LLC,%20I%20have%20an%20engineering%20inquiry"
+      class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+    <span class="toast-text">Message sent successfully!</span>
+  </div>
+
+  <!-- Modular Scripts -->
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/counters.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/rfq-calculator.js"></script>
+  <script src="assets/js/email-dispatch.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

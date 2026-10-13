@@ -1,0 +1,18 @@
+{
+  "name": "team-venture-metal-coating",
+  "version": "1.0.0",
+  "description": "Official Dynamic Responsive Website for Team Venture Metal Coating LLC – S.P.C. (Abu Dhabi, UAE)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "metal-coating",
+    "abu-dhabi",
+    "pipeline-fabrication",
+    "engineering"
+  ],
+  "author": "Team Venture Metal Coating LLC – S.P.C.",
+  "license": "ISC"
+}

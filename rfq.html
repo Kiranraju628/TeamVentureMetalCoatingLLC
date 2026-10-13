@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request for Quotation (RFQ) | Team Venture Metal Coating LLC | Abu Dhabi</title>
+  <meta name="description"
+    content="Submit your engineering specifications, pipe spool dimensions, or structural drawings to TVMC's Musaffah estimating desk for an expedited preliminary scope and quotation.">
+  <link rel="icon" type="image/png" href="assets/images/company-logo-raw.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       Site Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="Team Venture Metal Coating LLC Homepage">
+        <div class="brand-emblem">
+          <img src="assets/images/company-logo-raw.png" alt="Team Venture Metal Coating LLC" width="48" height="48">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">TEAM VENTURE <span>METAL COATING</span></span>
+          <span class="brand-subtitle">
+            LLC – S.P.C. <span class="uae-badge">Abu Dhabi, UAE</span>
+          </span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="rfq.html" class="nav-link active">RFQ Desk</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta-group">
+        <a href="rfq.html" class="btn btn-primary btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+          </svg>
+          Request RFQ
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Page Banner
+       ========================================================================== -->
+  <section class="hero-section" style="min-height: 48vh; padding-top: calc(var(--header-height) + 3rem); padding-bottom: 3.5rem;">
+    <div class="hero-bg">
+      <img src="assets/images/hero-facility.jpg" alt="TVMC Estimating and Engineering Desk Abu Dhabi">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>Commercial &amp; Estimating Desk &bull; Abu Dhabi</span>
+      </div>
+      <h1 class="hero-title" style="font-size: clamp(2rem, 3.8vw, 3.2rem); margin-bottom: 1rem;">
+        Request an Engineering RFQ
+      </h1>
+      <p class="hero-description" style="margin-bottom: 0;">
+        Use our interactive scope builder to check estimated turnarounds and dispatch your inquiry directly to our Musaffah estimating desk via official email.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive RFQ Estimator Section
+       ========================================================================== -->
+  <section class="rfq-section">
+    <div class="container">
+      <div class="rfq-wrapper">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" /></svg>
+            <span>Live Quotation Builder</span>
+          </div>
+          <h2 class="section-title">Configure Your Engineering Requirements</h2>
+          <p class="section-desc">Select service specifications below for an instant preliminary scope calculation and expedited proposal from our estimators.</p>
+        </div>
+
+        <div class="rfq-calculator-grid">
+          <!-- Interactive Selector Form -->
+          <form id="rfqForm" class="rfq-form">
+            <div class="form-group">
+              <label for="rfqService" class="form-label">1. Primary Engineering Service</label>
+              <select id="rfqService" class="form-select" required>
+                <option value="pipeline" selected>Pipe &amp; Pipeline Spool Fabrication</option>
+                <option value="oilgas">Oil &amp; Gas Field Services (Onshore/Offshore)</option>
+                <option value="structural">Structural Steel Fabrication (Skids &amp; Frames)</option>
+                <option value="procurement">Material Procurement &amp; Global Sourcing</option>
+                <option value="shutdown">Emergency Repair &amp; Plant Shutdown Services</option>
+              </select>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="rfqMaterial" class="form-label">2. Material Metallurgy</label>
+                <select id="rfqMaterial" class="form-select">
+                  <option value="cs" selected>Carbon Steel (ASTM A106 / A516 / A36)</option>
+                  <option value="ss">Stainless Steel (316L / 304 / 321)</option>
+                  <option value="duplex">Duplex / Super Duplex 2205 / 2507</option>
+                  <option value="specialty">Inconel / Monel / Exotic Alloys</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="rfqScope" class="form-label">3. Estimated Scope / Tonnage</label>
+                <select id="rfqScope" class="form-select">
+                  <option value="small">Small Scope (&lt; 5 Tons / Fast Track)</option>
+                  <option value="medium" selected>Medium Scope (5 - 30 Tons)</option>
+                  <option value="large">Heavy Industrial Scope (30+ Tons)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="rfqUrgency" class="form-label">4. Project Schedule Requirement</label>
+              <select id="rfqUrgency" class="form-select">
+                <option value="standard" selected>Standard Engineering Schedule</option>
+                <option value="urgent">Critical Urgency / Fast-Track Plant Shutdown</option>
+              </select>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="rfqName" class="form-label">Company / Contact Name</label>
+                <input type="text" id="rfqName" class="form-input" placeholder="e.g. Petrofac UAE / John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="rfqEmail" class="form-label">Corporate Email Address</label>
+                <input type="email" id="rfqEmail" class="form-input" placeholder="procurement@company.ae" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="rfqPhone" class="form-label">Contact Phone Number</label>
+              <input type="tel" id="rfqPhone" class="form-input" placeholder="+971 50 XXX XXXX" required>
+            </div>
+
+            <div class="form-group">
+              <label for="rfqNotes" class="form-label">Technical Drawings / Scope Details</label>
+              <textarea id="rfqNotes" class="form-textarea" rows="4"
+                placeholder="Provide pipe diameters, wall thickness, dimensions, or specific ADNOC specs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg class="btn-icon" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" /></svg>
+              <span>Submit RFQ &amp; Prepare Email Notification</span>
+            </button>
+          </form>
+
+          <!-- Live Dynamic Summary Box -->
+          <div class="rfq-summary-card">
+            <h3 class="summary-title">Scope Estimation Summary</h3>
+
+            <div class="summary-row">
+              <span class="summary-label">Target Service:</span>
+              <span class="summary-value" id="sumService">Pipe Spool Fabrication</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-label">Material Grade:</span>
+              <span class="summary-value" id="sumMaterial">Carbon Steel (ASTM A106 / A516)</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-label">Standards Compliance:</span>
+              <span class="summary-value highlight" id="sumCompliance">ASME B31.3, ADNOC Standard</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-label">Estimated Turnaround:</span>
+              <span class="summary-value highlight" id="sumTimeline">14 - 19 Days (Standard)</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-label">Fabrication Yard:</span>
+              <span class="summary-value">Musaffah Industrial, Abu Dhabi</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-label">Testing &amp; QA/QC:</span>
+              <span class="summary-value">100% NDT / Hydro / MTC Included</span>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(245, 158, 11, 0.08); border-radius: var(--radius-sm); border: 1px dashed rgba(245, 158, 11, 0.3);">
+              <span class="urgency-badge" style="margin-bottom: 0.5rem;">Schedule Guaranteed</span>
+              <p style="font-size: 0.82rem; color: #cbd5e1; margin-bottom: 0; line-height: 1.45;">
+                Our schedule guarantee ensures your delivery date is protected. Emergency expedited production shifts available 24/7.
+              </p>
+            </div>
+
+            <div class="rfq-action-box">
+              <a href="mailto:info@tvmcservices.com?subject=Engineering%20RFQ%20Inquiry%20-%20TVMC%20Estimators"
+                class="btn btn-secondary" style="width: 100%; justify-content: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+                <span>Direct Email Inquiry (info@tvmcservices.com)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Inquiry Confirmation Modal (Direct Email Notification Only)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="dispatchSuccessModal" role="dialog" aria-modal="true" aria-label="Email Notification Dispatched">
+    <div class="modal-box" style="padding: clamp(1.75rem, 3.5vw, 2.5rem); text-align: center; max-width: 580px;">
+      <button class="modal-close-btn" id="dispatchSuccessClose" aria-label="Close modal">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
+      </button>
+
+      <div style="width: 62px; height: 62px; margin: 0 auto 1.25rem; background: rgba(217, 119, 6, 0.15); border: 1px solid rgba(217, 119, 6, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <svg style="width: 32px; height: 32px; fill: var(--accent-gold);" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+      </div>
+
+      <h3 style="font-size: 1.5rem; color: #ffffff; margin-bottom: 0.5rem;" id="dispatchSuccessTitle">Email Notification Dispatched!</h3>
+      <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;" id="dispatchSuccessDesc">
+        Your inquiry has been stored in our system and formatted for direct notification to our official mailbox: <strong style="color: var(--accent-amber);">info@tvmcservices.com</strong>.
+      </p>
+
+      <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.25rem; text-align: left; font-size: 0.85rem;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+          <span style="color: var(--text-muted);">Target Recipient:</span>
+          <span style="color: #ffffff; font-weight: 600;">info@tvmcservices.com</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+          <span style="color: var(--text-muted);">Central Database:</span>
+          <span style="color: #10b981; font-weight: 600;" id="dispatchRecordId">Logged in System</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Operation Desk:</span>
+          <span style="color: #cbd5e1;">Mazyad Mall, Musaffah, Abu Dhabi</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem;">
+        <a id="dispatchEmailBtn" href="#" class="btn btn-primary" style="justify-content: center; gap: 0.65rem; padding: 0.85rem; font-size: 0.95rem;">
+          <svg style="width: 19px; height: 19px; fill: currentColor;" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          <span style="font-weight: 700;">Open Email Client to Send (info@tvmcservices.com)</span>
+        </a>
+
+        <button type="button" class="btn btn-outline" id="dispatchDoneBtn" style="justify-content: center; padding: 0.75rem; font-size: 0.9rem;">
+          Close &amp; Return to Website
+        </button>
+      </div>
+
+      <div style="font-size: 0.78rem; color: var(--text-muted);">
+        Central Engineering Estimating Desk &bull; Team Venture Metal Coating LLC
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand">
+            <div class="brand-emblem">
+              <img src="assets/images/company-logo-raw.png" alt="Team Venture Metal Coating LLC" width="48" height="48">
+            </div>
+            <div class="brand-info">
+              <span class="brand-name">TEAM VENTURE <span>METAL COATING</span></span>
+              <span class="brand-subtitle">LLC – S.P.C.</span>
+            </div>
+          </a>
+          <p>
+            Specialized engineering, pipeline spool fabrication, and metal coating services based in Musaffah, Abu Dhabi, UAE. Serving oil &amp; gas, marine, and industrial sectors with certified quality.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="rfq.html">RFQ Desk</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Services</h5>
+          <div class="footer-links">
+            <a href="services.html">Pipe Spool Fabrication</a>
+            <a href="services.html">Oil &amp; Gas Field Services</a>
+            <a href="services.html">Structural Steel Skids</a>
+            <a href="services.html">Material Procurement</a>
+            <a href="services.html">Industrial Blasting &amp; Coating</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Head Office</h5>
+          <div class="footer-links">
+            <span style="color: #cbd5e1; font-size: 0.88rem;">Mazyad Mall, Zayed City</span>
+            <span style="color: #cbd5e1; font-size: 0.88rem;">Musaffah Industrial, Abu Dhabi, UAE</span>
+            <span style="color: #cbd5e1; font-size: 0.88rem;">Phone: +971 55 409 8437</span>
+            <a href="mailto:info@tvmcservices.com" style="color: var(--accent-gold-light); font-weight: 600;">info@tvmcservices.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Team Venture Metal Coating LLC – S.P.C. All rights reserved.
+        </div>
+        <button class="back-to-top-btn" aria-label="Back to top">
+          <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" /></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions Widget -->
+  <div class="floating-actions">
+    <a href="https://wa.me/971554098437?text=Hello%20Team%20Venture%20Metal%20Coating%20LLC,%20I%20have%20an%20engineering%20inquiry"
+      class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+    <span class="toast-text">Message sent successfully!</span>
+  </div>
+
+  <!-- Modular Scripts -->
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/counters.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/rfq-calculator.js"></script>
+  <script src="assets/js/email-dispatch.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
